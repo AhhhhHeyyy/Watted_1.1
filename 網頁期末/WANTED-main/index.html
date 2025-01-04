@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANTTED</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Lexend+Zetta:wght@100..900&family=Orelega+One&display=swap"
+        rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
+    
+</head>
+
+<body>
+    <div class="websize">
+        <header>
+            <div class="decoration">
+                <div class="line1"></div>
+                <div class="spacing"></div>
+                <div class="line2"></div>
+            </div>
+            <div class="title">
+                <img src="./image/police-badge-seeklogo-01.png" alt="logo">
+                <h1>WANTED</h1>
+                <img src="./image/police-badge-seeklogo-01.png" alt="logo">
+            </div>
+            <nav>
+                <div class="time">
+                    <p id="date">31</p>
+                    <div></div>
+                    <p id="month">10</p>
+                    <div></div>
+                    <p id="year">2024</p>
+                </div>
+                <div class="list">
+                    <div class="section">
+                        <a><p>首頁</p></a>
+                    </div>
+                    <div class="section">
+                        <a href="javascript:void(0);" onclick="document.getElementById('prisoners').scrollIntoView({behavior: 'smooth'});"><p>通緝犯資料</p></a>
+                    </div>
+                    <div class="section">
+                        <a href="./report.html"><p>目擊者通報</p></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <article>
+            <div class="boss">
+                <div class="boss_img">
+                    <h1>THE UNKNOWN?</h1>
+                     <img src="./image/boss.jpg" alt="boss">
+                    
+                </div>
+                
+            
+                <div class="boss_info">
+                    <h1>網頁介紹</h1>
+                    <p> WANTED是一個紀錄許多通緝犯資訊的網頁,在這裡的通緝犯不是一般的人類,而是只存在於傳聞當中的生物,WANTED需要民眾協助定位通緝犯的位置,一旦通緝犯落網，會給予協助民眾高額的賞金。</p>
+                    <a href="./report.html">
+                        <button class="report-button">
+                            <img src="./image/ring.png" alt="圖示" style="width: 25px; height: 25px; margin-right: 10px;">
+                            立即通報
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="marquee-container">
+                <marquee>
+                    <p>【2025年1月4日📰】驚爆！聖誕老人昨夜夜闖光華館🎅，卻慘被熬夜苦幹的互動設計系學生當場抓獲，學生直呼：「還我們進度！」📚💻</p>
+                </marquee>
+            </div>
+            
+    
+            <div class="criminal" id="prisoners">
+               
+            <div class="criminal_direction">
+                <h1>使用說明</h1>
+                <p>點擊通緝令可以查看通緝犯的簡介，點擊詳細資料可前往通緝犯頁面查看更多資訊。<p>
+            </div>
+            <line> </line>
+            <div class="criminal_content">
+                <h1>通緝名單</h1>
+                <div class="criminal_info">
+                    <div class="Card">
+                        <div class="flipContainer">
+                        <div class="infoCardFront"><img src="./image/wanted_man.png" alt="wanted_man"></div>
+                        <div class="infoCardBack">
+                            <h2 class="prisonerName">瘦長人</h2>
+                            <div class="crimeinfo">
+                                <h2>通緝罪名</h2>
+                                <div class="line3"></div>
+                                <p>誘拐兒童</p>
+                            </div>
+                            <div class="crimeinfo">
+                                <h2>涉嫌紀錄</h2>
+                                <div class="line3"></div>
+                                <p>在兒童遊樂場拐走多名兒童</p>
+                            </div>
+                            <a href="./imformation.html" class="infobutton" >
+                                <h2>詳細資料</h2>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <div class="flipContainer">
+                        <div class="infoCardFront"><img src="./image/wanted_runningmama.jpg" alt="wanted_man"></div>
+                        <div class="infoCardBack">
+                            <h2 class="prisonerName">超高速婆婆</h2>
+                            <div class="crimeinfo">
+                                <h2>通緝罪名</h2>
+                                <div class="line3"></div>
+                                <p>超速駕駛</p>
+                            </div>
+                            <div class="crimeinfo">
+                                <h2>涉嫌紀錄</h2>
+                                <div class="line3"></div>
+                                <p>在高速公路上以時速120km超車</p>
+                            </div>
+                            <a href="./imformation.html" class="infobutton" >
+                                <h2>詳細資料</h2>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <div class="flipContainer">
+                        <div class="infoCardFront"><img src="./image/wanted_santa.png" alt="wanted_santa" ></div>
+                        <div class="infoCardBack">
+                            <h2 class="prisonerName">聖誕老人</h2>
+                            <div class="crimeinfo">
+                                <h2>通緝罪名</h2>
+                                <div class="line3"></div>
+                                <p>私闖名宅</p>
+                            </div>
+                            <div class="crimeinfo">
+                                <h2>涉嫌紀錄</h2>
+                                <div class="line3"></div>
+                                <p>透過房屋煙囪闖入居民住宅並投放不明盒狀物</p>
+                            </div>
+                            <a href="./imformation.html" class="infobutton" >
+                                <h2>詳細資料</h2>
+                            </a>
+                        </div>
+                        </div>
+                 
+                </div>
+                           
+            </div>
+        
+        </article>
+
+
+
+
+    </div>
+    <footer>
+        <div class="footerArea">
+            <div class="contactInfo">
+                <h2>聯繫方式</h2>
+                <div class="line2"></div>
+                <p>
+                    電話號碼：(886-2) 2771-2171<br>
+                    電子信箱：WantedWeb@gmail.com<br>
+                    總部地址：106344 台北市忠孝東路三段一號
+                </p>
+                <h2>警政單位</h2>
+                <div class="line2"></div>
+                <p>
+                    國立怪力亂神事務調查單位
+                </p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.710751155273!2d121.53182407537685!3d25.04388837781002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97d255598df%3A0x47ea748e8f3f53aa!2z5ZyL56uL6Ie65YyX56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1730442459261!5m2!1szh-TW!2stw"
+                width="426" height="227" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+y=new Date().getFullYear();
+m=new Date().getMonth()+1;
+d=new Date().getDate();
+
+document.getElementById("year").innerHTML=y;
+document.getElementById("month").innerHTML=m;
+document.getElementById("date").innerHTML=d;
+</script>
+
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANTTED</title>
+    <link rel="stylesheet" href="./css/report.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Beau+Rivage&family=Lexend+Zetta&family=Orelega+One&family=Zen+Maru+Gothic&display=swap"
+        rel="stylesheet">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <div class="websize">
+        <header>
+            <div class="decoration">
+                <div class="line"></div>
+                <div class="circle"></div>
+                <div class="line"></div>
+            </div>
+            <div class="title">
+                <img src="./image/police-badge-seeklogo-01.png" alt="logo">
+                <h1>WANTED</h1>
+                <img src="./image/police-badge-seeklogo-01.png" alt="logo">
+            </div>
+            <nav>
+                <div class="time">
+                    <p id="date">31</p>
+                    <div></div>
+                    <p id="month">10</p>
+                    <div></div>
+                    <p id="year">2024</p>
+                </div>
+                <div class="list">
+                    <div class="section">
+                        <a href="./index.html"><p>首頁</p></a>
+                    </div>
+                    <div class="section">
+                        <a href="./index.html#prisoners"><p>通緝犯資料</p></a>
+                    </div>
+                    <div class="section">
+                        <a><p>目擊者通報</p></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <article>
+
+            <div class="secondtitle">
+                <h1>REPORT</h1>
+            </div>
+            <div class="report_box">
+                <div class="citizen">
+                    <div class="form">
+                        <div class="form-row">
+                            <label>姓名</label><input type="text">
+                        </div>
+                        <div class="form-row">
+                            <label>市民編號</label><input type="text">
+                        </div>
+                        <div class="form-row">
+                            <label>連絡電話</label><input type="text">
+                        </div>
+                        <div class="form-row">
+                            <label>聯絡地址</label><input type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="criminal_report">
+                    <div class="form">
+                        <div class="form-row">
+                            <label>罪犯編號</label><input type="text">
+                        </div>
+                        <div class="form-row">
+                            <label>發現時間</label><input type="text">
+                        </div>
+                        <div class="form-row">
+                            <label>發現地點</label><input type="text">
+                        </div>
+                        <div class="form-row">
+                            <label>詳細經過</label><input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thanks">
+                <p>We appreciate your help!!</p>
+            </div>
+
+            <button class="button" type="submit">SENT</button>
+
+
+
+
+
+        </article>
+
+
+
+
+    </div>
+    <footer>
+        <div class="footerArea">
+            <div class="contactInfo">
+                <h2>聯繫方式</h2>
+                <div class="line2"></div>
+                <p>
+                    電話號碼：(886-2) 2771-2171<br>
+                    電子信箱：WantedWeb@gmail.com<br>
+                    總部地址：106344 台北市忠孝東路三段一號
+                </p>
+                <h2>警政單位</h2>
+                <div class="line2"></div>
+                <p>
+                    國立怪力亂神事務調查單位
+                </p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.710751155273!2d121.53182407537685!3d25.04388837781002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97d255598df%3A0x47ea748e8f3f53aa!2z5ZyL56uL6Ie65YyX56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1730442459261!5m2!1szh-TW!2stw"
+                width="426" height="227" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    y = new Date().getFullYear();
+    m = new Date().getMonth() + 1;
+    d = new Date().getDate();
+
+    document.getElementById("year").innerHTML = y;
+    document.getElementById("month").innerHTML = m;
+    document.getElementById("date").innerHTML = d;
+</script>

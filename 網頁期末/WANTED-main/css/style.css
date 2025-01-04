@@ -1,0 +1,463 @@
+@font-face{
+    font-family:'jf-openhuninn';
+    src: url("../font/jf-openhuninn-2.1.eot"),
+        url('../font/jf-openhuninn-2.1.ttf'),
+        url('../font/jf-openhuninn-2.1.woff');
+}
+
+@font-face{
+    font-family: 'DFHeiUBold-B5';
+    src: url('../font/DFHeiUBold-B5.ttc');
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-text-stroke: 0;
+    font-weight: normal;
+}
+
+
+body{
+    background-color: #FCE1B5;
+    background-image: url('../image/old-2012064_1920.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.backgroundImaga{
+    max-width: fit-content;
+    max-height: fit-content;
+    background-image: url('../image/old-2012064_1920.jpg');
+}
+
+.websize{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.decoration{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line1{
+    width: 100%;
+    border-top: 15px solid #20160F;
+    border-radius: 3px;
+}
+.line2{
+    width: 100%;
+    border-top: 5px solid #20160F;
+    border-radius: 3px;
+}
+
+.spacing {
+    height: 8px;
+    background-color: #d2b48c; /* 中間的背景色 */
+}
+
+.title{
+    display: flex;
+    height: 171px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img{
+    width: 120px;
+    height: 120px;
+}
+
+.title h1{
+    margin: 0px;
+    font-family: "Orelega One", serif;
+    font-weight: 400;
+    font-size: 160px;
+    letter-spacing: 16px;
+    color: #20160F;
+}
+
+header nav{
+    display: flex;
+    background-color: #20160F;
+    height: 53px;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+
+
+ /* BOSS */
+.boss{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: horizontal;
+    border-radius: 3px;
+    width: 100%;
+    height: 590px;
+   
+    
+}
+
+.boss_info{
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    align-items: flex-start;
+
+    padding-top: 50px;
+    padding-left: 42px;
+    margin-top: 20px;
+    margin-left: 60px;
+
+    border-left: #20160F solid 8px;
+    border-radius: 3px;
+    height: 500px;
+    
+
+}
+
+.boss_img{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center; /* 對齊 h1 的文字 */
+}
+
+.boss_img h1{
+    font-family: "Orelega One", serif;
+    font-weight: 400;
+    font-size: 90px;
+    margin: 0%;
+    
+}
+
+
+
+.boss_info h1{
+    font-family: "DFHeiUBold-B5";
+    font-size: 60px;
+    color: #20160F;
+    margin-bottom: 23px;
+ 
+}
+
+.boss_info p{
+    margin-top: 0px;
+    font-family: "jf-openhuninn";
+    font-size: 18px;
+    color: #20160F;
+    line-height: 150%;
+    text-align: left;
+}
+
+.report-button {
+    background-color: #20160F;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    font-weight: bold;
+    
+    display: flex; /* 將按鈕內容設為 Flexbox */
+    align-items: center; /* 圖片和文字垂直居中對齊 */
+    justify-content: center; /* 可選，讓內容水平居中 */
+    font-size: 24px;
+    margin: 15px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+ /* marquee跑馬燈 */
+
+marquee {
+    width: 100%;
+    height: 100px;
+    background-color: #20160F;
+    padding-top: 15px;
+}
+
+marquee p {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+}
+
+ /* CRIMINAL */
+.criminal{
+    display: flex;
+    flex-direction: row; 
+    border-top: 8px solid #20160F; 
+    border-bottom: 8px solid #20160F;
+    border-radius: 3px;
+    width: 100%;
+    height: 760px;
+    margin: 60px 0px;
+    
+
+}
+
+.criminal h1{
+    font-family: "DFHeiUBold-B5";
+    font-size: 60px;
+    color: #20160F;
+    margin-left: 20px;
+}
+
+.criminal_direction p{
+    margin-top: 0px;
+    font-family: "jf-openhuninn";
+    font-size: 18px;
+    color: #20160F;
+    line-height: 150%;
+    text-align: left;
+}
+
+.criminal_direction{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.criminal_content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 70%;
+
+}
+
+
+.criminal line{
+    width: 15px; /* 線的寬度 */
+    height: 80%; /* 線的高度 */
+    background-color: #20160F; /* 線的顏色 */
+    margin: 60px 20px;
+
+}
+
+
+.criminal_info {
+    display: flex;              /* 使用 Flexbox 布局 */
+    overflow-x: auto;           /* 啟用水平滾動條 */
+    overflow-y: hidden;           /* 啟用水平滾動條 */
+    white-space: nowrap;        /* 防止卡片換行 */
+    cursor: grab;               /* 提供拖動的視覺效果 */
+}
+
+
+.criminal_info:active {
+    cursor: grabbing;           /* 當拖動時的視覺效果 */
+}
+
+/* Chrome, Edge, 和 Safari */
+.criminal_info::-webkit-scrollbar {
+    width: 10px; /* 滾動條寬度 */
+    height: 10px; /* 滾動條高度 */
+    border: #20160F solid 2px; /* 滾動條邊框 */
+   
+}
+
+
+.criminal_info {
+    scrollbar-width: thin; /* 滾動條寬度 */
+    scrollbar-color: #20160F #FCE1B5 /* 滑塊顏色和背景顏色 */
+
+}
+
+/* IE/Edge 需要 JavaScript Polyfill */
+
+
+.Card{
+    width: 346px;         
+    height: 463px;
+    margin: 15px 25px;  
+}
+
+.flipContainer{
+    position: relative;
+    width: 346px; 
+    height: 463px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.infoCardFront{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 346px;
+    height: 463px;
+}
+
+.infoCardFront img{
+    width: 346px;
+    height: 463px;
+}
+
+.infoCardBack{
+    position: absolute;
+    display: flex;
+    width: 346px;
+    height: 463px;
+    background-color: #20160F;
+    flex-direction: column;
+    align-items: center;
+    padding: 23px 22px 23px 22px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg) !important;
+}
+
+.infoCardBack h2{
+    color: white;
+}
+
+.prisonerName{
+    font-size: 36px;
+}
+
+.crimeinfo{
+    width: 302px;
+    margin-top: 42px;
+}
+
+.crimeinfo p{
+    font-family:'jf-openhuninn';
+    font-size: 20px;
+    color: white;
+}
+
+.line3{
+    border-top: 3px solid white;
+    margin-top: 12px;
+    margin-bottom: 14px;
+}
+
+.infobutton{
+    position: absolute;
+    bottom: 36px;
+    display: flex;
+    justify-content: center;
+    width: 175px;
+    height: 47px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.infobutton h2{
+    color: #20160F;
+    margin-top: 10px;
+}
+
+/*卡片翻轉效果*/
+
+.flipped{
+    transform: rotateY(180deg);
+}
+
+ /* FOOT */
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section{
+    display: flex;
+    width: 154px;
+    margin: 0px 19px;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.section a{
+    text-decoration: none;
+}
+
+.section p{
+    margin: 0px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-left: 23px;
+    margin-top: 12px;
+    width: 158px;
+    height: 28px;
+}
+
+.time div{
+    width: 3px;
+    border-left: 3px solid white;
+}
+
+.time p{
+    margin: 0px;
+    font-family: "Lexend Zetta", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+article{
+    height: 1497px;
+    margin: auto;
+    width: 100%;
+
+}
+
+footer{
+    margin-top: 80px;
+    height: 305px;
+    background-color: #20160F;
+}
+
+.footerArea{
+    max-width: 1232px;
+    height: 305px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+h2{
+    margin: 0px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: white;
+}
+
+.contactInfo p{
+    font-family:'jf-openhuninn';
+    line-height: 150%;
+    color: white;
+}
+
+.contactInfo div{
+    margin-top: 5px;
+    margin-bottom: 11px;
+    border-top: 3px solid white;
+    width: 400px;
+    height: 3px;
+}
+

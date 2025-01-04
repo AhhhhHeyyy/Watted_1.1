@@ -1,0 +1,367 @@
+@font-face{
+    font-family:'jf-openhuninn';
+    src: url("../font/jf-openhuninn-2.1.eot"),
+        url('../font/jf-openhuninn-2.1.ttf'),
+        url('../font/jf-openhuninn-2.1.woff');
+}
+
+@font-face{
+    font-family: 'DFHeiUBold-B5';
+    src: url('../font/DFHeiUBold-B5.ttc');
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-text-stroke: 0;
+    font-weight: normal;
+}
+
+body{
+    background-color: #F0E7D9;
+    background-image: url('../image/old-2012064_1920.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.backgroundImaga{
+    max-width: fit-content;
+    max-height: fit-content;
+    background-image: url('../image/old-2012064_1920.jpg');
+}
+
+.websize{
+    display: flex;
+    flex-direction: column;
+    max-width: 1232px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.decoration{
+    margin-top: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line{
+    width: 541px;
+    border-top: 8px solid #20160F;
+    border-radius: 3px;
+}
+
+.circle{
+    margin: 0px 67px;
+    background-color: #20160F;
+    border-radius: 50%;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.title{
+    display: flex;
+    height: 171px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img{
+    width: 120px;
+    height: 120px;
+}
+
+.title h1{
+    margin: 0px;
+    font-family: "Orelega One", serif;
+    font-weight: 400;
+    font-size: 160px;
+    letter-spacing: 16px;
+    color: #20160F;
+}
+
+header nav{
+    display: flex;
+    background-color: #20160F;
+    height: 53px;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+
+
+/*article*/
+article{
+    margin-top: 0px;
+}
+
+.secondtitle{
+    display: flex;
+    justify-content: center;
+}
+
+article h1{
+    font-family: "Orelega One", serif;
+    font-weight: 400;
+    font-size: 162px;
+    letter-spacing: 5%;
+    -webkit-text-stroke: 5px #20160F;
+    color: transparent;
+    margin: 0px;
+}
+
+.infobox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 8px solid #20160F;
+    padding-top: 51px;
+    height: 584px;
+}
+
+.infobox img{
+    width: 581px;
+    height: 481px;
+    border: 6px solid #20160F;
+    margin-right: 48px;
+}
+
+.prisonerInfo{
+    width: 483px;
+    height: 481px;
+}
+
+.infoSection{
+    height: 91px;
+}
+
+.infoSection p {
+    margin: 0px;
+    margin-bottom: 12px;
+    font-family:'jf-openhuninn';
+    line-height: 150%;
+    color: #20160F;
+}
+
+.infoSection h2{
+    color: #20160F;
+}
+
+.infoSection div{
+    border-top: 3px solid #20160F;
+}
+
+.prisonerCodeBox{
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 407px;
+    height: 46px;
+    background-color: #20160F;
+}
+
+.prisonerCodeBox p{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.indoDecoLineR{
+    position:absolute;
+    right: 22px;
+    top: 22px;
+    border-left: 2px solid #20160F;
+    height: 274px;
+}
+
+.indoDecoLineL{
+    position:absolute;
+    left: 22px;
+    bottom: 22px;
+    border-left: 2px solid #20160F;
+    height: 274px;
+}
+
+.position{
+    margin-top: 19px;
+}
+
+h3{
+    font-family: 'DFHeiUBold-B5';
+    font-size: 60px;
+    color: #20160F;
+    margin: 0px;
+    margin-top: 42px;
+}
+
+.line3{
+    border-top: 8px solid #20160F;
+    margin-top: 32px;
+    margin-bottom: 44px;
+}
+
+.reportSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reportBox{
+    position: relative;
+    width: 574px;
+    height: 362px;
+    background-color: #20160F;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 55px;
+}
+
+.reportBox iframe{
+    margin-right: 25px;
+}
+
+.positionInfo{
+    position: relative;
+    width: 151px;
+    height: 288px;
+}
+
+.line4 {
+    border-top: 3px solid white;
+    margin-top: 3px;
+    margin-bottom: 18px;
+}
+
+.name{
+    position: absolute;
+   bottom: 0%;
+   right: 0%;
+   
+}
+
+p{
+    font-family:'jf-openhuninn';
+    font-size: 20px;
+    color: white;
+    margin: 0px;
+}
+
+.content{
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.decoLineR{
+    position: absolute;
+    right: 16px;
+    top: 22px;
+    margin: 0px;
+    border-left: 2px solid white;
+    width: 2px;
+    height: 145px;
+}
+
+.decoLineL{
+    position: absolute;
+    left: 16px;
+    bottom: 22px;
+    margin: 0px;
+    border-left: 2px solid white;
+    width: 2px;
+    height: 145px;
+}
+
+ /* FOOT */
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section{
+    display: flex;
+    width: 154px;
+    margin: 0px 19px;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.section a{
+    text-decoration: none;
+}
+
+.section p{
+    margin: 0px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-left: 23px;
+    margin-top: 12px;
+    width: 158px;
+    height: 28px;
+}
+
+.time div{
+    width: 3px;
+    border-left: 3px solid white;
+}
+
+.time p{
+    margin: 0px;
+    font-family: "Lexend Zetta", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+footer{
+    margin-top: 20px;
+    height: 305px;
+    background-color: #20160F;
+}
+
+.footerArea{
+    max-width: 1232px;
+    height: 305px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+h2{
+    margin: 0px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: white;
+}
+
+.contactInfo p{
+    font-family:'jf-openhuninn';
+    font-size: 16px;
+    line-height: 150%;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.contactInfo div{
+    margin-top: 5px;
+    margin-bottom: 11px;
+    border-top: 3px solid white;
+    width: 400px;
+    height: 3px;
+}
