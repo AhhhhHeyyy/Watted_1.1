@@ -45,15 +45,16 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+ 
 }
 
 .line1{
-    width: 100%;
+    width: 120%;
     border-top: 15px solid #20160F;
-    border-radius: 3px;
+    border-radius: 0px;
 }
 .line2{
-    width: 100%;
+    width: 110%;
     border-top: 5px solid #20160F;
     border-radius: 3px;
 }
@@ -461,3 +462,220 @@ h2{
     height: 3px;
 }
 
+
+
+@media (max-width: 600px) {
+
+    header{
+        width: 100%;
+    }
+
+    header nav .list .section {
+        width: 100%;
+        margin: 0;
+       
+        
+    }
+
+    header nav .list {
+        width: 100%;
+        
+    }
+
+    header nav{
+        width: 105%;
+        justify-self: center;
+        border-radius: 0%;
+        
+    }
+ 
+
+    header nav .list .section p {
+        font-size: 16px; /* 調整文字大小 */
+        margin: 0;
+        
+    }
+
+    header nav .time{
+        width: 30%;
+        height: 40%;
+        margin-top: 16px;
+        
+    }
+
+    header nav .time p{
+        font-size: 14px;
+    }
+
+    header .line1{
+        width: 105%;
+    }
+
+    header .line2{
+        width: 105%;
+    }
+
+
+
+
+    
+    .title{
+        height: 80%;
+    }
+
+    .title h1 {
+        font-size: 48px;
+        letter-spacing: 4px;
+        margin: 0px;
+    }
+
+    .title img {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+    }
+
+    .websize {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+
+    .websize article {
+      padding: 10px;
+    }
+
+    
+
+    
+    .boss {
+        flex-direction: column;
+        height: auto;
+       
+    }
+
+    .boss_img {
+        width: 100%; /* 圖片寬度填滿容器 */
+        height: 200px; /* 固定高度 */
+        overflow: hidden;
+    }
+    
+    .boss_img h1 {
+        font-size: 45px;
+    }
+
+  
+    .boss_info {
+        width: 100%;
+        height: 80%;
+        padding: 10px;
+        padding-bottom: 120px;
+        margin: 0px;
+        border-left: none;
+    }
+
+    .boss_info h1 {
+        font-size: 45px;
+    }
+
+    .boss_info p {
+        font-size: 14px;
+    }
+
+    .report-button{
+        width: 148px;
+        height: 60px;
+        text-size-adjust: 70%;
+        position: fixed;
+        left: 30%;
+    }
+
+    marquee {
+        width: 100%;
+        height: 50%;
+        text-size-adjust: 70%;
+        padding: 2%;
+
+    }
+
+    .criminal{
+        flex-direction: column;
+        align-items: center; /* 水平置中 */
+        border-top: 0px #20160F;
+        margin-top: 10px;
+        height: auto; 
+    }
+
+    .criminal h1{
+        font-size: 48px;
+        text-align: center;
+        margin: 20px;
+    }
+
+
+    .criminal p{
+        font-size: 14px;
+        width: 80%;
+        margin: auto;
+        
+    }
+
+    .criminal_direction{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .criminal line{
+        width: 100%; /* 線的寬度 */
+        height: 7px; /* 線的高度 */
+        margin: 0%;
+    }
+
+    .criminal_content{
+        height: 600px;
+        margin-bottom: 20px;
+        width: 100%;
+
+    }
+
+    
+
+
+
+    footer {
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+        height: auto;
+    }
+
+    footer h2{
+        font-size:20px;
+    }
+
+   footer p{
+       font-size: 14px;
+   }
+
+   .contactInfo{
+    width: 60%;
+   }
+
+   footer .line2{
+    width: 100%;
+   }
+
+
+   iframe{
+       width: 30%;
+   }
+
+}
