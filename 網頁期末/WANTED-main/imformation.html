@@ -19,14 +19,23 @@
     <div class="websize">
         <header>
             <div class="decoration">
-                <div class="line"></div>
-                <div class="circle"></div>
-                <div class="line"></div>
+                <div class="line1"></div>
+                <div class="spacing"></div>
+                <div class="line2"></div>
             </div>
             <div class="title">
                 <img src="./image/police-badge-seeklogo-01.png" alt="logo">
                 <h1>WANTED</h1>
                 <img src="./image/police-badge-seeklogo-01.png" alt="logo">
+            </div>
+            <div class="smalltime">
+                <div class="time">
+                    <p id="date">31</p>
+                    <div></div>
+                    <p id="month">10</p>
+                    <div></div>
+                    <p id="year">2024</p>
+                </div>
             </div>
             <nav>
                 <div class="time">
@@ -38,10 +47,10 @@
                 </div>
                 <div class="list">
                     <div class="section">
-                        <a href="./index.html"><p>首頁</p></a>
+                        <a><p>首頁</p></a>
                     </div>
-                    <div class="section">
-                        <a href="./index.html#prisoners"><p>通緝犯資料</p></a>
+                    <div class="section" id="secondsection">
+                        <a href="javascript:void(0);" onclick="document.getElementById('prisoners').scrollIntoView({behavior: 'smooth'});"><p>通緝犯資料</p></a>
                     </div>
                     <div class="section">
                         <a href="./report.html"><p>目擊者通報</p></a>
@@ -58,32 +67,38 @@
                 <div class="indoDecoLineL"></div>
                 <img src="./image/santa.png" alt="santa">
                 <div class="prisonerInfo">
-                    <div class="infoSection">
-                        <h2>通緝犯名稱</h2>
-                        <div></div>
-                        <p>聖誕老人</p>
+                    <div class="infoContainer1">
+                        <div class="infoSection">
+                            <h2>通緝犯名稱</h2>
+                            <div></div>
+                            <p>聖誕老人</p>
+                        </div>
+                        <div class="infoSection">
+                            <h2>通緝犯特徵</h2>
+                            <div></div>
+                            <p>身形龐大、紅色衣物、白色鬍鬚</p>
+                        </div>
+                        <div class="infoSection">
+                            <h2>通緝時間</h2>
+                            <div></div>
+                            <p>2000/01/01</p>
+                        </div>
                     </div>
-                    <div class="infoSection">
-                        <h2>通緝犯特徵</h2>
-                        <div></div>
-                        <p>身形龐大、紅色衣物、白色鬍鬚</p>
-                    </div>
-                    <div class="infoSection">
-                        <h2>通緝時間</h2>
-                        <div></div>
-                        <p>2000/01/01</p>
-                    </div>
-                    <div class="infoSection">
-                        <h2>通緝罪名</h2>
-                        <div></div>
-                        <p>私闖民宅</p>
-                    </div>
-                    <div class="infoSection">
-                        <h2>涉嫌紀錄</h2>
-                        <div></div>
-                        <p>透過房屋煙囪闖入居民住宅並投放不明盒狀物</p>
+                    
+                    <div class="infoContainer2">
+                        <div class="infoSection">
+                            <h2>通緝罪名</h2>
+                            <div></div>
+                            <p>私闖民宅</p>
+                        </div>
+                        <div class="infoSection">
+                            <h2>涉嫌紀錄</h2>
+                            <div></div>
+                            <p>透過房屋煙囪闖入居民住宅並投放不明盒狀物</p>
+                        </div>
                     </div>
                 </div>
+
                 <div class="prisonerCodeBox">
                     <p>通緝編號：112AC2038</p>
                 </div>

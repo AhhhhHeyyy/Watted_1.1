@@ -33,6 +33,15 @@
                 <h1>WANTED</h1>
                 <img src="./image/police-badge-seeklogo-01.png" alt="logo">
             </div>
+            <div class="smalltime">
+                <div class="time">
+                    <p id="date">31</p>
+                    <div></div>
+                    <p id="month">10</p>
+                    <div></div>
+                    <p id="year">2024</p>
+                </div>
+            </div>
             <nav>
                 <div class="time">
                     <p id="date">31</p>
@@ -45,7 +54,7 @@
                     <div class="section">
                         <a><p>首頁</p></a>
                     </div>
-                    <div class="section">
+                    <div class="section" id="secondsection">
                         <a href="javascript:void(0);" onclick="document.getElementById('prisoners').scrollIntoView({behavior: 'smooth'});"><p>通緝犯資料</p></a>
                     </div>
                     <div class="section">
@@ -61,20 +70,21 @@
             <div class="boss">
                 <div class="boss_img">
                     <h1>THE UNKNOWN?</h1>
-                     <img src="./image/boss.jpg" alt="boss">
-                    
+                    <img src="./image/boss.jpg" alt="boss">
                 </div>
                 
             
                 <div class="boss_info">
                     <h1>網頁介紹</h1>
                     <p> WANTED是一個紀錄許多通緝犯資訊的網頁,在這裡的通緝犯不是一般的人類,而是只存在於傳聞當中的生物,WANTED需要民眾協助定位通緝犯的位置,一旦通緝犯落網，會給予協助民眾高額的賞金。</p>
+                    <div class="callbutton">
                     <a href="./report.html">
                         <button class="report-button">
                             <img src="./image/ring.png" alt="圖示" style="width: 25px; height: 25px; margin-right: 10px;">
                             立即通報
                         </button>
                     </a>
+                    </div>
                 </div>
             </div>
 
@@ -168,30 +178,29 @@
 
 
     </div>
-    <footer>
-        <div class="footerArea">
-            <div class="contactInfo">
-                <h2>聯繫方式</h2>
-                <div class="line2"></div>
-                <p>
-                    電話號碼：(886-2) 2771-2171<br>
-                    電子信箱：WantedWeb@gmail.com<br>
-                    總部地址：106344 台北市忠孝東路三段一號
-                </p>
-                <h2>警政單位</h2>
-                <div class="line2"></div>
-                <p>
-                    國立怪力亂神事務調查單位
-                </p>
-            </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.710751155273!2d121.53182407537685!3d25.04388837781002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97d255598df%3A0x47ea748e8f3f53aa!2z5ZyL56uL6Ie65YyX56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1730442459261!5m2!1szh-TW!2stw"
-                width="426" height="227" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </footer>
 </body>
-
+<footer>
+    <div class="footerArea">
+        <div class="contactInfo">
+            <h2>聯繫方式</h2>
+            <div class="line2"></div>
+            <p>
+                電話號碼：(886-2) 2771-2171<br>
+                電子信箱：WantedWeb@gmail.com<br>
+                總部地址：106344 台北市忠孝東路三段一號
+            </p>
+            <h2>警政單位</h2>
+            <div class="line2"></div>
+            <p>
+                國立怪力亂神事務調查單位
+            </p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.710751155273!2d121.53182407537685!3d25.04388837781002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97d255598df%3A0x47ea748e8f3f53aa!2z5ZyL56uL6Ie65YyX56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1730442459261!5m2!1szh-TW!2stw"
+            width="426" height="227" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
 </html>
 
 <script>
@@ -203,5 +212,4 @@ document.getElementById("year").innerHTML=y;
 document.getElementById("month").innerHTML=m;
 document.getElementById("date").innerHTML=d;
 </script>
-
 
