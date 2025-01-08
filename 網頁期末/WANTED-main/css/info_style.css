@@ -17,11 +17,12 @@
 }
 
 body{
-    background-color: #F0E7D9;
+    background-color: #FCE1B5;
     background-image: url('../image/old-2012064_1920.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 .backgroundImaga{
@@ -33,30 +34,33 @@ body{
 .websize{
     display: flex;
     flex-direction: column;
-    max-width: 1232px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .decoration{
-    margin-top: 37px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+ 
 }
 
-.line{
-    width: 541px;
-    border-top: 8px solid #20160F;
+.line1{
+    width: 100%;
+    border-top: 15px solid #20160F;
+    border-radius: 0px;
+}
+.line2{
+    width: 100%;
+    border-top: 5px solid #20160F;
     border-radius: 3px;
 }
 
-.circle{
-    margin: 0px 67px;
-    background-color: #20160F;
-    border-radius: 50%;
-    min-width: 16px;
-    min-height: 16px;
+.spacing {
+    height: 8px;
+    background-color: #d2b48c; /* 中間的背景色 */
 }
 
 .title{
@@ -87,7 +91,6 @@ header nav{
     justify-content: space-between;
     border-radius: 3px;
 }
-
 
 
 /*article*/
@@ -171,7 +174,7 @@ article h1{
 
 .indoDecoLineR{
     position:absolute;
-    right: 22px;
+    right: 17px;
     top: 22px;
     border-left: 2px solid #20160F;
     height: 274px;
@@ -276,7 +279,7 @@ p{
 }
 
  /* FOOT */
-.list{
+ .list{
     display: flex;
     justify-content: space-between;
 }
@@ -324,14 +327,25 @@ p{
     color: white;
 }
 
+.smalltime{
+    display: none;
+}
+
+article{
+    height: auto;
+    margin: auto;
+    width: 100%;
+
+}
+
 footer{
-    margin-top: 20px;
+    margin-top: 80px;
     height: 305px;
     background-color: #20160F;
 }
 
 .footerArea{
-    max-width: 1232px;
+    max-width: 1440px;
     height: 305px;
     margin-left: auto;
     margin-right: auto;
@@ -352,10 +366,8 @@ h2{
 
 .contactInfo p{
     font-family:'jf-openhuninn';
-    font-size: 16px;
     line-height: 150%;
     color: white;
-    margin-bottom: 15px;
 }
 
 .contactInfo div{
@@ -364,4 +376,429 @@ h2{
     border-top: 3px solid white;
     width: 400px;
     height: 3px;
+}
+
+
+@media (max-width: 1000px) {
+
+    /*整體*/
+
+    .websize {
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+
+
+    .websize {
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+
+
+
+    /*header*/
+    
+    .title{
+        height: 80%;
+    }
+
+    .title h1 {
+        font-size: 100px;
+        letter-spacing: 4px;
+        margin: 0px;
+    }
+
+    .smalltime{
+        display:block;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav{
+        width: 105%;
+        height: 53px;
+        justify-self: center;
+        border-radius: 0%;
+        border-top: 3px solid #20160F;
+        border-bottom: 3px solid #20160F;
+        background-color: transparent;
+    }
+
+    header nav .list .section {
+        width: 100%;
+        margin: 0;
+        height: 24px;
+        padding-top: 0px;
+    }
+
+    header nav .list .section p {
+        margin: 0;
+        color: #20160F;
+    }
+
+    #secondsection{
+        border-left: 2px solid #20160F;
+        border-right: 2px solid #20160F;
+    }
+
+    .list {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    header nav .time{
+        display: none;
+    }
+
+    .time div{
+        border-left:3px solid #20160F ;
+    }
+
+    .time p{
+        color: #20160F;
+    }
+
+
+    /*body*/
+
+    
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .secondtitle h1{
+        font-size: 100px;
+        -webkit-text-stroke: 4px #20160F;
+    }
+
+
+
+    /*article*/
+
+    /*infobox*/
+    .infobox{
+        flex-direction: column;
+        height: auto;
+        border: 4px solid #20160F;
+    }
+
+    .infobox img{
+        height: 70%;
+        width: 90%;
+        margin: auto;
+    }
+
+    .prisonerInfo{
+        display: flex;
+        flex-direction: row;
+        height: 50%;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .infoSection{
+        font-size: 20px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .reportBox{
+        width: 80%;
+    }
+
+    .reportSection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .infoContainer1{
+        width: 45%;
+    }
+
+    .infoContainer2{
+        width: 48%;
+    }
+
+    .indoDecoLineL {
+        position: absolute;
+        left: 11px;
+        bottom: 20px;
+        
+    }
+
+    .indoDecoLineR {
+        position: absolute;
+        right:11px;
+        top: 20px;
+    }
+
+
+
+
+
+    .positionInfo{
+        width: 50%;
+    }
+
+
+    footer {
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+        height: auto;
+    }
+
+    .footerArea{
+        padding: 0px;
+    }
+
+    footer h2{
+        font-size:20px;
+    }
+
+   footer p{
+       font-size: 14px;
+   }
+
+   .contactInfo{
+    width: 60%;
+   }
+
+   footer .line2{
+    width: 100%;
+   }
+
+
+   iframe{
+       width: 30%;
+   }
+    
+
+
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    
+    header{
+        width: auto;
+    }
+
+    header nav .list .section {
+        width: 100%;
+        margin: 0;
+        height: 24px;
+        padding-top: 0px;
+    }
+
+    #secondsection{
+        border-left: 2px solid #20160F;
+        border-right: 2px solid #20160F;
+    }
+
+    .list {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    header nav{
+        width: 105%;
+        height: 35px;
+        justify-self: center;
+        border-radius: 0%;
+        border-top: 2px solid #20160F;
+        border-bottom: 2px solid #20160F;
+        background-color: transparent;
+    }
+ 
+
+    header nav .list .section p {
+        font-size: 16px; /* 調整文字大小 */
+        margin: 0;
+        color: #20160F;
+    }
+
+    header nav .time{
+        display: none;
+    }
+
+    .smalltime{
+        display:block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .time p{
+        font-size: 13px;
+        color: #20160F;
+    }
+    .time{
+        margin-top: 0px;
+        height: 18px;
+        width: 103px;
+    }
+    .time div{
+        border-left:1px solid #20160F ;
+    }
+
+    header .line1{
+        width: 105%;
+    }
+
+    header .line2{
+        width: 105%;
+    }
+
+
+
+
+    
+    .title{
+        height: 80%;
+    }
+
+    .title h1 {
+        font-size: 48px;
+        letter-spacing: 4px;
+        margin: 0px;
+    }
+
+    .title img {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+    }
+
+    .websize {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .secondtitle h1{
+        font-size: 57px;
+        -webkit-text-stroke: 2px #20160F;
+    }
+
+
+
+    .infobox{
+        height: auto;
+        border: 3px solid #20160F;
+    }
+
+
+    .prisonerInfo{
+        width: 90%;
+        flex-direction: column;
+        margin: 30px;
+        margin-bottom: 80px;
+    }
+
+    
+
+    .infoSection{
+        height: 100%;
+        margin: 20px;
+        margin-top: 0px;
+    }
+
+    .infoContainer1{
+        width: 80%;
+    }
+
+    .infoContainer2{
+        width: 80%;
+    }
+
+
+
+
+    .prisonerInfo p {
+        font-size: 16px;
+    }
+
+    .prisonerInfo h2 {
+        font-size: 20px;
+    }
+
+
+    .prisonerCodeBox{
+        width: 100%;
+    }
+
+    .indoDecoLineL {
+        position: absolute;
+        left: 8px;
+        bottom: 70px;
+        
+    }
+
+    .indoDecoLineR{
+        position:absolute;
+        right: 8px;
+        top: 22px;
+
+    }
+
+
+
+    .position h3{
+        font-size: 40px;
+        text-align: center
+    }
+    
+    .reportBox{
+        width: 100%;
+    }
+
+    .reportSection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .positionInfo{
+        width: 50%;
+
+    }
+
+    .positionInfo p{
+        font-size: 16px;
+    }
+
+
+
+  
+
+
+
 }
