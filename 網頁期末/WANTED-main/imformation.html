@@ -15,6 +15,10 @@
     <script src="./js/script.js"></script>
 </head>
 
+
+
+
+  
 <body>
     <div class="websize">
         <header>
@@ -65,40 +69,117 @@
             </div>
             <div class="infobox">
                 <div class="indoDecoLineL"></div>
-                <img src="./image/santa.png" alt="santa">
-                <div class="prisonerInfo">
-                    <div class="infoContainer1">
-                        <div class="infoSection">
-                            <h2>通緝犯名稱</h2>
-                            <div></div>
-                            <p>聖誕老人</p>
-                        </div>
-                        <div class="infoSection">
-                            <h2>通緝犯特徵</h2>
-                            <div></div>
-                            <p>身形龐大、紅色衣物、白色鬍鬚</p>
-                        </div>
-                        <div class="infoSection">
-                            <h2>通緝時間</h2>
-                            <div></div>
-                            <p>2000/01/01</p>
-                        </div>
-                    </div>
-                    
-                    <div class="infoContainer2">
-                        <div class="infoSection">
-                            <h2>通緝罪名</h2>
-                            <div></div>
-                            <p>私闖民宅</p>
-                        </div>
-                        <div class="infoSection">
-                            <h2>涉嫌紀錄</h2>
-                            <div></div>
-                            <p>透過房屋煙囪闖入居民住宅並投放不明盒狀物</p>
-                        </div>
-                    </div>
-                </div>
 
+
+        <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                <svg width="581px" height="481px" viewBox="0 0 581 481">
+                    <mask id="customMask">
+                        <rect x="0" y="0" width="581px" height="481px" fill="white" />
+                      </mask>
+                <defs>
+                    <filter id="filter" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse">
+                    <feFlood flood-color="black" result="black" />
+                    <feFlood flood-color="red" result="flood1" />
+                    <feFlood flood-color="limegreen" result="flood2" />
+                    <feOffset in="SourceGraphic" dx="3" dy="0" result="off1a"/>
+                    <feOffset in="SourceGraphic" dx="2" dy="0" result="off1b"/>
+                    <feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a"/>
+                    <feOffset in="SourceGraphic" dx="-2" dy="0" result="off2b"/>
+                    <feComposite in="flood1" in2="off1a" operator="in"  result="comp1" />
+                    <feComposite in="flood2" in2="off2a" operator="in" result="comp2" />
+                    <feMerge x="0" width="100%" result="merge1">
+                        <feMergeNode in="black" />
+                        <feMergeNode in="comp1" />
+                        <feMergeNode in="off1b" />
+                        <animate 
+                        attributeName="y" 
+                        id="y"
+                        dur="4s"
+                        values="104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 60px; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px"
+                        keyTimes="0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1"
+                        repeatCount="indefinite" />
+                        <animate 
+                        attributeName="height" 
+                        id="h" 
+                        dur="4s"
+                        values="10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px"
+                        keyTimes="0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1"
+                        repeatCount="indefinite" />
+                    </feMerge>
+                    <feMerge x="0" width="100%" y="60px" height="65px" result="merge2">
+                        <feMergeNode in="black" />
+                        <feMergeNode in="comp2" />
+                        <feMergeNode in="off2b" />
+                        <animate attributeName="y" id="y" dur="4s" 
+                        values="103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;" 
+                        keyTimes="0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1" 
+                        repeatCount="indefinite" />
+                        <animate attributeName="height" id="h" dur="4s"
+                        values="0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px"
+                        keyTimes="0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513;  1"
+                        repeatCount="indefinite" />
+                    </feMerge>
+                    <feMerge>
+                        <feMergeNode in="SourceGraphic" />
+                        <feMergeNode in="merge1" /> 
+                        <feMergeNode in="merge2" />
+                    </feMerge>
+                    </filter>
+                </defs>
+
+                <!-- 將圖片作為濾鏡目標 -->
+                <image x="0" y="0" width="581px" height="481px" xlink:href="./image/santa.png" filter="url(#filter)" mask="url(#customMask)" />
+
+        </svg>
+
+        <div class="prisonerInfo">
+            <div class="infoContainer1">
+                <div class="infoSection">
+                    <h2>通緝犯名稱</h2>
+                    <div></div>
+                    <p class="TextAni">
+                        <span class="TextAni__shape"></span>
+                        <span class="TextAni__text">聖誕老人</span>
+                    </p>
+                </div>
+                <div class="infoSection">
+                    <h2>通緝犯特徵</h2>
+                    <div></div>
+                    <p class="TextAni">
+                        <span class="TextAni__shape"></span>
+                        <span class="TextAni__text">身形龐大、紅色衣物、白色鬍鬚</span>
+                    </p>
+                </div>
+                <div class="infoSection">
+                    <h2>通緝時間</h2>
+                    <div></div>
+                    <p class="TextAni">
+                        <span class="TextAni__shape"></span>
+                        <span class="TextAni__text">2000/01/01</span>
+                    </p>
+                </div>
+            </div>
+        
+            <div class="infoContainer2">
+                <div class="infoSection">
+                    <h2>通緝罪名</h2>
+                    <div></div>
+                    <p class="TextAni">
+                        <span class="TextAni__shape"></span>
+                        <span class="TextAni__text">私闖民宅</span>
+                    </p>
+                </div>
+                <div class="infoSection">
+                    <h2>涉嫌紀錄</h2>
+                    <div></div>
+                    <p class="TextAni">
+                        <span class="TextAni__shape"></span>
+                        <span class="TextAni__text">透過房屋煙囪闖入居民住宅並投放不明盒狀物</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
                 <div class="prisonerCodeBox">
                     <p>通緝編號：112AC2038</p>
                 </div>
