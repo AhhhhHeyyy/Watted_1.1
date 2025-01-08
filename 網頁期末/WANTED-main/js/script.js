@@ -174,3 +174,55 @@ $(document).ready(function() {
         $(this).scrollLeft($(this).scrollLeft() + delta);
     });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // 選取圖片和 SVG 濾鏡節點
+    const img = document.getElementById("glitch-image");
+    const feOffset1a = document.querySelector("feOffset[result='off1a']");
+    const feOffset2a = document.querySelector("feOffset[result='off2a']");
+
+    let dx1 = 3; // 偏移值
+    let dx2 = -3;
+
+    function animate() {
+        // 隨機調整 feOffset 的偏移值，模擬動態效果
+        dx1 = Math.random() * 6 - 3; // 範圍 -3 ~ 3
+        dx2 = Math.random() * 6 - 3;
+
+        feOffset1a.setAttribute("dx", dx1);
+        feOffset2a.setAttribute("dx", dx2);
+
+        // 繼續下一幀動畫
+        requestAnimationFrame(animate);
+    }
+
+    // 啟動動畫
+    animate();
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // 選取所有背景形狀元素和文字元素
+    let $shape = document.querySelectorAll('.TextAni__shape');
+    let $text = document.querySelectorAll('.TextAni__text');
+
+    // 建立 GSAP 時間軸
+    let tl = new TimelineMax();
+
+    // 背景展開動畫
+    tl.staggerTo($shape, 0.5, {
+        scaleX: 1, // 背景從 0 展開到完整寬度
+        ease: Power3.easeInOut
+    }, 0.15);
+
+    // 加入 0.5 秒的停頓
+    tl.addPause("+=0.5");
+
+    // 文字漸出動畫
+    tl.staggerTo($text, 0.8, {
+        opacity: 1, // 文字漸顯
+        ease: Power3.easeInOut
+    }, 0.15);
+});
