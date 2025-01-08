@@ -144,7 +144,62 @@ article h1{
     font-family:'jf-openhuninn';
     line-height: 150%;
     color: #20160F;
+    position: relative;
+    overflow: hidden;
 }
+
+/* TextAni 核心動畫樣式 */
+/* 背景形狀的動畫 */
+.TextAni__shape {
+    content: '';
+    position: absolute;
+    background-color: #20160F;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: scaleX(0); /* 初始狀態為收縮 */
+    transform-origin: left;
+    animation: shapeExpand 0.5s ease-out forwards, shapeRetract 1s ease-in 2s forwards; /* 增加縮回動畫 */
+}
+
+/* 背景展開動畫 */
+@keyframes shapeExpand {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* 背景縮回動畫 */
+@keyframes shapeRetract {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+/* 文字漸顯動畫 */
+.TextAni__text {
+    opacity: 0; /* 初始為透明 */
+    position: relative;
+    animation: textFadeIn 0.8s ease-out forwards; /* 文字漸顯動畫 */
+    animation-delay: 0.65s; /* 背景展開後 0.5 秒再顯示文字 */
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .infoSection h2{
     color: #20160F;
@@ -378,6 +433,13 @@ h2{
     height: 3px;
 }
 
+svg {
+    position: relative;
+    top: -25px;
+    left: -100px;
+    overflow: hidden;
+  }
+
 
 @media (max-width: 1000px) {
 
@@ -473,6 +535,13 @@ h2{
         margin: 0;
         padding: 0;
     }
+
+    svg {
+        position: relative;
+        top: -25px;
+        left: 50px;
+        overflow: hidden;
+      }
 
 
     .secondtitle h1{
@@ -686,6 +755,16 @@ h2{
         width: 60px;
         height: 60px;
     }
+
+    
+    svg {
+        position: relative;
+        top: -10px;
+        left: 15px;
+        overflow: hidden;
+        width: 90%;
+        height: 10%;
+      }
 
 
     body {
